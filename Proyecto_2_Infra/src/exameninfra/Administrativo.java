@@ -5,6 +5,7 @@
  */
 package exameninfra;
 
+import java.util.ArrayList;
 import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -24,9 +25,9 @@ public class Administrativo extends javax.swing.JFrame {
     public int sys_productores;
     public int sys_consumidores;
     //public int sys_process;
-    public int sys_commands;
-    public ListaImpresoras lista_impresoras;
-    public ListaProcesos lista_procesos;
+    public int sys_commands;    
+    public ArrayList<MailboxLog[]> lista_impresoras = new ArrayList<>();
+    public ArrayList<VentanaProceso[]> lista_procesos = new ArrayList<>();
 
     public Administrativo() {
         initComponents();
@@ -191,6 +192,9 @@ public class Administrativo extends javax.swing.JFrame {
         if(0< sys_productores  && 0< sys_consumidores && 0< sys_commands && sys_productores<sys_consumidores){
             for(int i = 0; i< sys_productores; i++){
                 System.out.println("LOL");
+                String nombre = JOptionPane.showInputDialog("Nombre del proceso " + i);
+                VentanaProceso proc = new VentanaProceso(nombre);
+                //lista_procesos.
             }
             this.setVisible(false);
             //CargarArchivos cargar_archivos = new CargarArchivos();
