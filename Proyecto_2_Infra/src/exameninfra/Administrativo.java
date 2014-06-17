@@ -247,6 +247,7 @@ public class Administrativo extends javax.swing.JFrame {
         });
     }
 
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_Continue;
     private javax.swing.JLabel jLabel14;
