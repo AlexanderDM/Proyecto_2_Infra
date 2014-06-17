@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package Proyecto2;
+package Proyecto_2_infra;
 
 /**
  *
